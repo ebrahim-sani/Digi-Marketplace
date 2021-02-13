@@ -1,0 +1,50 @@
+/*============  First Component  =============*/
+.header {
+  background-color: #fff;
+}
+.header__component {
+  margin: 0 120px;
+}
+.component__one {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+}
+.search__field {
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+.search__field input {
+  padding: 10px 50px;
+  outline: none;
+  border: none;
+  background: whitesmoke;
+}
+.search__icon {
+  position: relative;
+  left: 10px;
+}
+.gift__icon {
+  display: flex;
+  align-items: center;
+}
+.checkout__basket {
+  display: flex;
+  align-items: center;
+}
+.checkout__basket span {
+  font-weight: 500;
+}
+/*============  Second Component  =============*/
+.nav__links {
+  text-align: center;
+  padding: 14px;
+}
+.nav__links a {
+  text-decoration: none;
+  color: rgb(29, 27, 27);
+  margin: 20px;
+}
