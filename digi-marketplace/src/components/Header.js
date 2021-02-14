@@ -21,7 +21,9 @@ function Header() {
             <CardGiftcardIcon />
             <span>Gift Card</span>
           </div>
-          <Button variant="outline">sign in</Button>
+          <Button variant="outlined" color="primary">
+            Sign in
+          </Button>
           <div className="checkout__basket">
             <ShoppingBasketIcon />
             <span>0</span>

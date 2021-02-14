@@ -1,0 +1,21 @@
+.explore_component img {
+  width: 40px;
+  padding-bottom: 10px;
+}
+.explore_component h3 {
+  padding-bottom: 5px;
+}
+.explore_component {
+  width: 16rem;
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  outline: blue;
+}
+
+.explore_component p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  margin: 0 20px;
+}

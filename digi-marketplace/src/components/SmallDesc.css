@@ -1,0 +1,15 @@
+.desc {
+  background: #fff;
+}
+.desc__component {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin: 0 100px;
+}
+.right__component {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left__component {
+  margin-top: 20px;
+}

@@ -1,0 +1,12 @@
+.explore {
+  margin: 40px 0;
+}
+.explore__components {
+  display: flex;
+  margin: 0 100px;
+  justify-content: space-between;
+}
+.explore__heading {
+  display: flex;
+  justify-content: center;
+}

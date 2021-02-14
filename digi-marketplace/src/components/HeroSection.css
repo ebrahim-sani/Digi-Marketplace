@@ -1,0 +1,28 @@
+.hero {
+  background: #fff;
+}
+.hero__component {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 100px;
+}
+.left__hero,
+.right__hero {
+  margin: 30px 0;
+}
+
+.right__hero img {
+  width: 40rem;
+}
+.left__hero h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+.left__hero p {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.hero__btn {
+  margin: 30px 0;
+}
