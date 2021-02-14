@@ -18,7 +18,16 @@ function SmallDesc() {
             flaw. So our finished product is error-free, accurate, and
             top-notch.
           </p>
-          <Button variant="outlined" color="primary">
+          <Button
+            variant="outlined"
+            color="primary"
+            style={{
+              marginTop: 20,
+              padding: 16,
+              width: 200,
+              borderRadius: 20,
+            }}
+          >
             Just Explore
           </Button>
         </div>
@@ -34,8 +43,18 @@ function SmallDesc() {
               img="/email.png"
               desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
             />
+            <RightContent
+              head="Easy to Maintain"
+              img="/email.png"
+              desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
+            />
           </div>
           <div className="content">
+            <RightContent
+              head="Easy to Maintain"
+              img="/email.png"
+              desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
+            />
             <RightContent
               head="Easy to Maintain"
               img="/email.png"

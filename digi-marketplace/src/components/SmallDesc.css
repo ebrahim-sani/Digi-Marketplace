@@ -13,3 +13,9 @@
 .left__component {
   margin-top: 20px;
 }
+.left__component p {
+  margin: 20px 48px 0 0;
+  font-size: 0.96rem;
+  font-weight: 300;
+  line-height: 25px;
+}

@@ -3,8 +3,7 @@ import "./Header.css";
 import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import { Button } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 function Header() {
   return (
     <div className="header">
@@ -25,7 +24,7 @@ function Header() {
             Sign in
           </Button>
           <div className="checkout__basket">
-            <ShoppingBasketIcon />
+            <ShoppingCartIcon />
             <span>0</span>
           </div>
         </div>

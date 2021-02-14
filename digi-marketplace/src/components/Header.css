@@ -10,7 +10,7 @@
   padding: 20px 0;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid #837ee0;
 }
 .search__field {
   background: whitesmoke;
@@ -47,4 +47,7 @@
   text-decoration: none;
   color: rgb(29, 27, 27);
   margin: 20px;
+}
+.nav__links a:hover {
+  color: #837ee0;
 }

@@ -7,9 +7,7 @@ function HeroSection() {
     <div className="hero">
       <div className="hero__component">
         <div className="left__hero">
-          <h1>
-            Last-Day Gift Guide <span>UP TO 60% OFF</span>
-          </h1>
+          <h1>Last-Day Gift Guide UP TO 60% OFF</h1>
           <p>
             Find the best Sales Tax Software for your business. Compare product
             reviews and features to build your list. <br /> <br /> Note: You are
