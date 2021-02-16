@@ -7,9 +7,12 @@ function Login() {
   return (
     <div className="login">
       <div className="login__component">
+        <h1>ROZZ</h1>
         <div className="login__fields">
           <form method="post">
-            <h3>Login</h3>
+            <div className="login__heading">
+              <h3>Signin</h3>
+            </div>
             <div className="text__field">
               <input type="text" placeholder="Username or Email" />
             </div>
@@ -19,7 +22,7 @@ function Login() {
             <div className="forgot__passLink">Forgot Password?</div>
             <button>Login</button>
             <div className="sign__up">
-              Don't have account? <a href="/">Signup here..</a>
+              Don't have account? <a href="/register">Signup here..</a>
             </div>
           </form>
         </div>

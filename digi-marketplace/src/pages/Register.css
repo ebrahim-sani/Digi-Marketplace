@@ -4,7 +4,7 @@
   height: 100vh;
   overflow: hidden;
 }
-.login__component h1 {
+.register__component h1 {
   text-align: center;
   position: relative;
   top: 7rem;
