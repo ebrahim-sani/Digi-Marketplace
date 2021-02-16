@@ -5,6 +5,9 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import TwitterIcon from "@material-ui/icons/Twitter";
 
+require("react-dom");
+window.React2 = require("react");
+
 function Footer() {
   return (
     <div className="footer">

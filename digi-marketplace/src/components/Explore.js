@@ -2,6 +2,9 @@ import React from "react";
 import "./Explore.css";
 import ExploreCard from "./inner-component/ExploreCard";
 
+require("react-dom");
+window.React2 = require("react");
+
 function Explore() {
   return (
     <div className="explore">

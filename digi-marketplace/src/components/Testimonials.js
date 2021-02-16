@@ -1,6 +1,9 @@
 import React from "react";
 import "./Testimonials.css";
 
+require("react-dom");
+window.React2 = require("react");
+
 function Testimonials() {
   return (
     <div className="testimonials">

@@ -1,6 +1,9 @@
 import React from "react";
 import "./TopSoftwares.css";
 
+require("react-dom");
+window.React2 = require("react");
+
 function TopSoftwares() {
   return (
     <div className="top__softwares">

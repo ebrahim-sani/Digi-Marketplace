@@ -2,6 +2,9 @@ import { Button } from "@material-ui/core";
 import React from "react";
 import "./HeroSection.css";
 
+require("react-dom");
+window.React2 = require("react");
+
 function HeroSection() {
   return (
     <div className="hero">
