@@ -3,9 +3,6 @@ import React from "react";
 import RightContent from "./inner-component/RightContent";
 import "./SmallDesc.css";
 
-require("react-dom");
-window.React2 = require("react");
-
 function SmallDesc() {
   return (
     <div className="desc">

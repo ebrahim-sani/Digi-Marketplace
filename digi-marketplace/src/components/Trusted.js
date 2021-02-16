@@ -1,9 +1,6 @@
 import React from "react";
 import "./Trusted.css";
 
-require("react-dom");
-window.React2 = require("react");
-
 function Trusted() {
   return (
     <div className="trusted">

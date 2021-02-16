@@ -1,0 +1,65 @@
+/* #837ee0; */
+.login {
+  background: #837ee0;
+  height: 100vh;
+  overflow: hidden;
+}
+.login__fields {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.25);
+}
+form h3 {
+  margin: 20px;
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid gray;
+  color: #837ee0;
+}
+form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.text__field {
+  padding: 2px;
+  border-bottom: 2px solid gray;
+  position: relative;
+}
+.text__field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.forgot__passLink {
+  color: #837ee0;
+  text-decoration: underline;
+  margin: 10px 0;
+  cursor: pointer;
+}
+button {
+  margin-top: 5px;
+  padding: 10px 145px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #837ee0;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.sign__up {
+  margin: 15px 0;
+  font-weight: 300;
+}
+.sign__up a {
+  cursor: pointer;
+}

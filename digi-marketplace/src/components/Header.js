@@ -5,9 +5,6 @@ import { Button } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
-require("react-dom");
-window.React2 = require("react");
-
 function Header() {
   return (
     <div className="header">
