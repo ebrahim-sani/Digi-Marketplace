@@ -1,0 +1,179 @@
+/*============= Sidebar  ==============*/
+
+.dashboard__component {
+  display: flex;
+
+  /* background: #fff; */
+}
+
+.siderbar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  flex: 0.2;
+  background: #fff;
+  height: 100vh;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.23);
+}
+
+.main__dashboard {
+  display: flex;
+  flex: 0.8;
+}
+.sidebar__items {
+  margin: 80px 0 0 0;
+}
+.sidebar__items h4 {
+  color: rgb(177, 175, 175);
+  font-weight: 300;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(236, 233, 233);
+}
+.item a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: rgb(32, 32, 32);
+}
+.sidebar__logo h3 {
+  color: #837ee0;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+/*============= Main Dashboard  ==============*/
+.main__dashboard {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard__info {
+  margin-left: 20px;
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 35px;
+}
+.header__icon {
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+}
+.headerIcon {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.headerIcon:hover {
+  color: #837ee0;
+}
+.main__dashboard h3 {
+  font-size: 1.4rem;
+  color: #837ee0;
+  font-weight: 700;
+}
+.left__component {
+  display: flex;
+  flex: 0.4;
+  position: relative;
+  top: 10px;
+}
+.dashboard__info {
+  display: flex;
+  align-items: center;
+}
+.right__component {
+  margin: 0 50px 0 20px;
+  background: #fff;
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.24);
+}
+.chart {
+  position: relative;
+  left: 15px;
+  width: 35rem;
+  height: 17.8rem;
+}
+.sales__info {
+  display: flex;
+  margin-top: 13px;
+}
+.amount {
+  margin-right: 10px;
+}
+.top__selling {
+  display: flex;
+  flex: 0.6;
+  margin: 10px 10px 10px 0;
+}
+.top__selling {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+.top__header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  background: #fff;
+}
+.top__header h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.export {
+  display: flex;
+  align-items: center;
+  background: #837ee0;
+  padding: 4px 6px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.export h5 {
+  font-weight: 500;
+}
+.top__subHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(66, 65, 65);
+  padding: 10px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgb(236, 236, 236);
+}
+.top__subHeader h4 {
+  font-weight: 500;
+}
+.sw__products {
+  overflow-y: scroll;
+  height: 190px;
+}
+.total__sales {
+  display: flex;
+  flex: 0.4;
+  flex-direction: column;
+  position: relative;
+  padding: 10px 20px;
+  top: 10px;
+  height: 266px;
+  margin-left: 20px;
+  margin-right: 70px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 7px 0px rgba(00, 0, 0, 0.24);
+}
+.donut__chart {
+  position: relative;
+  left: 70px;
+  top: 20px;
+}

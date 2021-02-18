@@ -1,0 +1,14 @@
+.top__software {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+  border-bottom: 3px solid whitesmoke;
+  cursor: pointer;
+}
+.top__software span {
+  color: rgb(90, 89, 89);
+}

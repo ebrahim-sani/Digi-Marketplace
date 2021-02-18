@@ -6,14 +6,14 @@
   grid-template-columns: 1fr 1.5fr;
   margin: 0 100px;
 }
-.right__component {
+.right_component {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.left__component {
+.left_component {
   margin-top: 20px;
 }
-.left__component p {
+.left_component p {
   margin: 20px 48px 0 0;
   font-size: 0.96rem;
   font-weight: 300;

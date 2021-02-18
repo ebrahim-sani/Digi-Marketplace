@@ -7,7 +7,7 @@ function SmallDesc() {
   return (
     <div className="desc">
       <div className="desc__component">
-        <div className="left__component">
+        <div className="left_component">
           <h3>Quality We Ensure</h3>
           <p>
             Nowadays website is the most productive media for marketing your
@@ -31,8 +31,8 @@ function SmallDesc() {
             Just Explore
           </Button>
         </div>
-        <div className="right__component">
-          <div className="content">
+        <div className="right_component">
+          <div className="smallDesc__content">
             <RightContent
               head="Easy to Maintain"
               img="/email.png"
