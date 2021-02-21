@@ -1,0 +1,23 @@
+.status__component {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.action {
+  position: relative;
+  left: 150px;
+}
+.action span {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.action span:hover {
+  background: whitesmoke;
+}
+.s_name {
+  width: 290px;
+}
+.s_status {
+  width: 200px;
+}

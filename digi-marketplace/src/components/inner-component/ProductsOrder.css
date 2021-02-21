@@ -1,0 +1,25 @@
+.order__details {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+}
+.sw_name {
+  width: 280px;
+}
+.ce_name {
+  width: 268px;
+}
+.payment_status {
+  width: 260px;
+}
+.order__details span {
+  font-size: 0.8rem;
+  color: rgb(95, 93, 93);
+}
+
+.order__details:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
+}

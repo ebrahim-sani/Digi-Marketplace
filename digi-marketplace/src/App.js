@@ -5,13 +5,37 @@ import Login from "./pages/Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import CustomerDashboard from "./pages/CustomerDashboard";
+import Orders from "./components/Orders";
+import Overview from "./components/Overview";
+import Payment from "./components/Payment";
+import Recipt from "./components/Recipt";
 
 function App() {
   return (
-    <div className="app">
-      <Router>
+    <Router>
+      <div className="app">
+        <div className="dashboard__body">
+          <Switch>
+            <Route path="/customer/dashboard/overview">
+              <Overview />
+            </Route>
+            <Route path="/customer/dashboard/payments">
+              <Payment />
+            </Route>
+            <Route path="/customer/dashboard/recipts">
+              <Recipt />
+            </Route>
+            <Route path="/customer/dashboard/orders">
+              <Orders />
+            </Route>
+          </Switch>
+        </div>
         <Switch>
-          <Route path="/dashboard">
+          <Route path="/customer/dashboard">
+            <CustomerDashboard />
+          </Route>
+          <Route path="/vendor/dashboard">
             <Dashboard />
           </Route>
           <Route path="/register">
@@ -24,8 +48,8 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

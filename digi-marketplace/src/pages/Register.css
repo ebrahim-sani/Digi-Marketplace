@@ -1,8 +1,14 @@
 /* #837ee0; */
-.login {
-  background: whitesmoke;
+.register {
+  background: #fff;
   height: 100vh;
   overflow: hidden;
+}
+.register h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-style: italic;
+  color: #837ee0;
 }
 .register__component h1 {
   text-align: center;

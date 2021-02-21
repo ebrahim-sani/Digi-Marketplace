@@ -38,6 +38,10 @@
 .checkout__basket span {
   font-weight: 500;
 }
+.market__place a {
+  text-decoration: none;
+  color: rgb(27, 25, 25);
+}
 /*============  Second Component  =============*/
 .nav__links {
   text-align: center;

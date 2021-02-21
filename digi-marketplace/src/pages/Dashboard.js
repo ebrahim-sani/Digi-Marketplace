@@ -145,8 +145,8 @@ function Dashboard() {
                 <TopSelling
                   name="Customer Tracker"
                   date="18-02-2021"
-                  price="229.99"
-                  amount="1,233.55"
+                  price="225.99"
+                  amount="1,733.55"
                 />
                 <TopSelling
                   name="Customer Tracker"

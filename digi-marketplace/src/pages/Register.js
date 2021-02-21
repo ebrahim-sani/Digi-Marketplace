@@ -4,8 +4,8 @@ import "./Register.css";
 function Register() {
   return (
     <div className="register">
+      <h1>ROZZ</h1>
       <div className="register__component">
-        <h1>ROZZ</h1>
         <div className="login__fields">
           <form method="post">
             <div className="login__heading">

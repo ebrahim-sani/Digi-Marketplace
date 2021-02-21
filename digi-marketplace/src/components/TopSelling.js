@@ -4,7 +4,7 @@ import "./TopSelling.css";
 function TopSelling({ name, date, price, amount }) {
   return (
     <div className="top__software">
-      <span>{name}</span>
+      <span className="name">{name}</span>
       <span>{date}</span>
       <span>${price}</span>
       <span>{amount}</span>

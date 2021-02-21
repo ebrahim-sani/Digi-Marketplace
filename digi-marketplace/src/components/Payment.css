@@ -1,0 +1,27 @@
+.payment__component {
+  position: absolute;
+  left: 320px;
+  top: 170px;
+  width: 67.5vw;
+}
+.payment_header h4 {
+  padding: 10px;
+}
+.detail_header {
+  padding: 10px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+.act {
+  position: relative;
+  right: 122px;
+}
+.pym_sts {
+  position: relative;
+  right: 20px;
+}
+.date {
+  position: relative;
+  right: 130px;
+}

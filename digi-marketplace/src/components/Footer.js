@@ -34,7 +34,7 @@ function Footer() {
             <a href="/">Program Overview</a>
             <a href="/">Advertise With Us</a>
             <a href="/">Testimonials</a>
-            <a href="/">Vendow Login</a>
+            <a href="/vendor/login">Vendor Login</a>
           </div>
         </div>
         <div className="footer__content">

@@ -12,3 +12,6 @@
 .top__software span {
   color: rgb(90, 89, 89);
 }
+.name {
+  width: 8rem;
+}

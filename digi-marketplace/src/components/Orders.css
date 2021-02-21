@@ -1,0 +1,23 @@
+.order__component {
+  position: absolute;
+  left: 320px;
+  top: 170px;
+  width: 67.5vw;
+}
+.order__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: whitesmoke;
+  padding: 10px;
+}
+.order__header span {
+  color: rgb(39, 38, 38);
+}
+.payment__status {
+  position: relative;
+  left: 20px;
+}
+.order_date {
+  padding-right: 20px;
+}

@@ -1,0 +1,96 @@
+.dashboard__component {
+  display: flex;
+  background: #fff;
+}
+
+/*============= Sidebar  ==============*/
+
+.customerD__sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  flex: 0.2;
+  background: #fff;
+  height: 100vh;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.23);
+}
+
+.main__dashboard {
+  display: flex;
+  flex: 0.8;
+}
+.sidebar__items {
+  margin: 80px 0 0 0;
+}
+.sidebar__items h4 {
+  color: rgb(177, 175, 175);
+  font-weight: 300;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(236, 233, 233);
+}
+.item a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: rgb(32, 32, 32);
+}
+.sidebar__logo h3 {
+  color: #837ee0;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+/*============= Main Dashboard  ==============*/
+.main__dashboard {
+  /* margin: 0 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 35px;
+}
+.header__icon {
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+}
+.headerIcon {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.headerIcon:hover {
+  color: #837ee0;
+}
+.main__dashboard h3 {
+  font-size: 1.4rem;
+  color: #837ee0;
+  font-weight: 700;
+}
+.overview__header {
+  margin: 20px 20px 0 0;
+}
+.overview__header span {
+  padding: 10px 16px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(44, 43, 43);
+  border-bottom: 1px solid #837ee0;
+  cursor: pointer;
+}
+.overview__header span:hover {
+  background-color: whitesmoke;
+}
+.customer__details {
+  width: 65vw;
+  height: 100vh;
+  z-index: 99;
+}

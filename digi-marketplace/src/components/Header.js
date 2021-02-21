@@ -4,8 +4,10 @@ import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import { Button } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import { useHistory } from "react-router-dom";
 
 function Header() {
+  const history = useHistory();
   return (
     <div className="header">
       <div className="header__component">
@@ -17,17 +19,20 @@ function Header() {
             <SearchIcon className="search__icon" />
             <input type="text" placeholder="search" />
           </div>
+          <div className="market__place">
+            <a href="/#">Marketplace</a>
+          </div>
           <div className="gift__icon">
             <CardGiftcardIcon />
             <span>Gift Card</span>
           </div>
-          <Button variant="outlined" color="primary">
+          <Button
+            onClick={() => history.push("/customer/login")}
+            variant="outlined"
+            color="primary"
+          >
             Sign in
           </Button>
-          <div className="checkout__basket">
-            <ShoppingCartIcon />
-            <span>0</span>
-          </div>
         </div>
         <div className="component__two">
           <div className="nav__links">
