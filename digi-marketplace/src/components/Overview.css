@@ -1,5 +1,36 @@
 .overview_component {
+  display: flex;
   position: absolute;
   left: 320px;
   top: 170px;
+  width: 67.5vw;
+}
+.customer___overview {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+}
+.customer___overview h3 {
+  margin: 5px 0px 10px 5px;
+}
+.customer___details {
+  display: flex;
+  margin: 40px 0 0 0;
+  flex: 0.5;
+}
+
+.customer___name {
+  display: flex;
+  flex: 0.7;
+}
+.customer___name span {
+  margin: 5px;
+}
+.customer___name p {
+  margin: 7px;
+  width: 80px;
+  color: gray;
+}
+.spent {
+  font-weight: 600;
 }

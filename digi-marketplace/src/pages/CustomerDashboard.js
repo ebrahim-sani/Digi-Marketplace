@@ -2,7 +2,6 @@ import React from "react";
 import "./CustomerDashboard.css";
 import DashboardHeader from "../components/DashboardHeader";
 import Sidebar from "../components/Sidebar";
-import Overview from "../components/Overview";
 
 function CustomerDashboard() {
   return (

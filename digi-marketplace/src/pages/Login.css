@@ -13,6 +13,7 @@
   font-style: italic;
   color: #837ee0;
 }
+
 .login__fields {
   position: absolute;
   top: 50%;
@@ -37,7 +38,11 @@ form h3 {
   justify-content: space-between;
   border-bottom: 2px solid gray;
 }
-
+.login__heading p {
+  color: #837ee0;
+  font-style: italic;
+  text-decoration: underline;
+}
 form {
   padding: 0 40px;
   box-sizing: border-box;

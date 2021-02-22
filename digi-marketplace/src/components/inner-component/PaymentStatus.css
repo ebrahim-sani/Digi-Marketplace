@@ -10,11 +10,12 @@
 .action span {
   padding: 10px 20px;
   border-radius: 4px;
+  margin-left: 7px;
+  background: #837ee0;
   cursor: pointer;
+  color: whitesmoke;
 }
-.action span:hover {
-  background: whitesmoke;
-}
+
 .s_name {
   width: 290px;
 }

@@ -10,6 +10,7 @@ function Register() {
           <form method="post">
             <div className="login__heading">
               <h3>Register</h3>
+              <p>Vendor</p>
             </div>
             <div className="text__field">
               <input type="text" placeholder="First Name" />

@@ -3,7 +3,6 @@ import "./Header.css";
 import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import { Button } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useHistory } from "react-router-dom";
 
 function Header() {
@@ -13,14 +12,16 @@ function Header() {
       <div className="header__component">
         <div className="component__one">
           <div className="header__logo">
-            <span>ROZZ</span>
+            <span onClick={() => history.push("/")}>ROZZ</span>
           </div>
           <div className="search__field">
             <SearchIcon className="search__icon" />
             <input type="text" placeholder="search" />
           </div>
           <div className="market__place">
-            <a href="/#">Marketplace</a>
+            <span onClick={() => history.push("/marketplace")}>
+              Marketplace
+            </span>
           </div>
           <div className="gift__icon">
             <CardGiftcardIcon />

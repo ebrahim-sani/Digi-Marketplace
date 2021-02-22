@@ -32,9 +32,6 @@ function DashboardHeader() {
         <span onClick={() => history.push("/customer/dashboard/payments")}>
           Payment
         </span>
-        <span onClick={() => history.push("/customer/dashboard/recipts")}>
-          Recipts
-        </span>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import CustomerDashboard from "./pages/CustomerDashboard";
 import Orders from "./components/Orders";
 import Overview from "./components/Overview";
 import Payment from "./components/Payment";
-import Recipt from "./components/Recipt";
+import MarketPlace from "./pages/MarketPlace";
 
 function App() {
   return (
@@ -23,25 +23,26 @@ function App() {
             <Route path="/customer/dashboard/payments">
               <Payment />
             </Route>
-            <Route path="/customer/dashboard/recipts">
-              <Recipt />
-            </Route>
+
             <Route path="/customer/dashboard/orders">
               <Orders />
             </Route>
           </Switch>
         </div>
         <Switch>
+          <Route path="/marketplace">
+            <MarketPlace />
+          </Route>
           <Route path="/customer/dashboard">
             <CustomerDashboard />
           </Route>
           <Route path="/vendor/dashboard">
             <Dashboard />
           </Route>
-          <Route path="/register">
+          <Route path="/vendor/register">
             <Register />
           </Route>
-          <Route path="/login">
+          <Route path="/vendor/login">
             <Login />
           </Route>
           <Route path="/">

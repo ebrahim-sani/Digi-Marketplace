@@ -21,7 +21,7 @@ function Sidebar() {
               color: "#837ee0",
             }}
           />
-          <a href="/#">Dashboard</a>
+          <a href="/">Home</a>
         </div>
         <div className="item">
           <EmailIcon
