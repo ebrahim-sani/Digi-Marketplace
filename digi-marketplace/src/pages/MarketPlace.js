@@ -12,7 +12,7 @@ function MarketPlace() {
         <div className="software__list">
           <Software
             cover_img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
-            sw_name="NordVPN 18-Month VPN Subscription - Internet Privacy & Security Software with Top-Grade Security Standards, Double Encryption, Secure Content Access"
+            sw_name="Security Software with Top-Grade Security Standards..."
             desc=""
           />
           <Software

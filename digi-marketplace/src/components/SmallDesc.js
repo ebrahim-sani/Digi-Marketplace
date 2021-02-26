@@ -35,34 +35,34 @@ function SmallDesc() {
           <div className="smallDesc__content">
             <RightContent
               head="Easy to Maintain"
-              img="/email.png"
+              img="/easy.png"
               desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
             />
             <RightContent
-              head="Easy to Maintain"
-              img="/email.png"
+              head="Scallable Software"
+              img="/scale.png"
               desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
             />
             <RightContent
-              head="Easy to Maintain"
-              img="/email.png"
+              head="Multiple User"
+              img="/multiple.png"
               desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
             />
           </div>
           <div className="content">
             <RightContent
-              head="Easy to Maintain"
-              img="/email.png"
+              head="Very Durable"
+              img="/hard.png"
               desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
             />
             <RightContent
-              head="Easy to Maintain"
-              img="/email.png"
+              head="Mobile & Desktop"
+              img="/mo&des.png"
               desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
             />
             <RightContent
-              head="Easy to Maintain"
-              img="/email.png"
+              head="Super Power"
+              img="/power.png"
               desc="User interface and user experience both are super important for a website. We are very careful to provide best user friendly, nice looking websites."
             />
           </div>

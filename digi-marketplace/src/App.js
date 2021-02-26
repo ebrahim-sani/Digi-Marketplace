@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -10,8 +10,34 @@ import Orders from "./components/Orders";
 import Overview from "./components/Overview";
 import Payment from "./components/Payment";
 import MarketPlace from "./pages/MarketPlace";
+import CustomersLogin from "./pages/CustomersLogin";
+import CustomerRegister from "./pages/Customers.Register";
+import { auth } from "./firebase";
+import { login, logout, selectUser } from "./features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import AddProduct from "./components/AddProduct";
 
 function App() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        dispatch(
+          login({
+            uid: authUser.uid,
+            email: authUser.email,
+          })
+        );
+      } else {
+        //logout
+        dispatch(logout);
+      }
+    });
+    return unsubscribe;
+  }, [dispatch]);
+
   return (
     <Router>
       <div className="app">
@@ -23,13 +49,21 @@ function App() {
             <Route path="/customer/dashboard/payments">
               <Payment />
             </Route>
-
             <Route path="/customer/dashboard/orders">
               <Orders />
             </Route>
           </Switch>
         </div>
         <Switch>
+          <Route path="/vendor/add-product">
+            <AddProduct />
+          </Route>
+          <Route path="/customer/register">
+            <CustomerRegister />
+          </Route>
+          <Route path="/customer/login">
+            <CustomersLogin />
+          </Route>
           <Route path="/marketplace">
             <MarketPlace />
           </Route>
@@ -38,6 +72,12 @@ function App() {
           </Route>
           <Route path="/vendor/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/customer/register">
+            <CustomerRegister />
+          </Route>
+          <Route path="/customer/login">
+            <CustomersLogin />
           </Route>
           <Route path="/vendor/register">
             <Register />

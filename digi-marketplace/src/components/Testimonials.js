@@ -10,37 +10,37 @@ function Testimonials() {
           <div className="testimony">
             <img src="/qout.png" alt="quot" />
             <p>
-              I have worked with LeoCoder on web development projects and the
+              I have worked with ROZZ on Software development projects and the
               experience has been satisfactory both in the customer-supplier
               relationship and in the delivery times and quality of technical
               solutions. I hope to continue collaborating with them on WordPress
               Support in the future.
             </p>
-            <h3>Odón Martí</h3>
-            <h5>Director at Uber</h5>
+            <h3>Ebrahim Sani</h3>
+            <h5>Director at Google</h5>
           </div>
           <div className="testimony">
             <img src="/qout.png" alt="quot" />
             <p>
-              I have worked with LeoCoder on web development projects and the
+              I have worked with ROZZ on Software development projects and the
               experience has been satisfactory both in the customer-supplier
               relationship and in the delivery times and quality of technical
               solutions. I hope to continue collaborating with them on WordPress
               Support in the future.
             </p>
-            <h3>Odón Martí</h3>
-            <h5>Director at Uber</h5>
+            <h3>Muh'd H.</h3>
+            <h5>Director at Facebook</h5>
           </div>
           <div className="testimony">
             <img src="/qout.png" alt="quot" />
             <p>
-              I have worked with LeoCoder on web development projects and the
+              I have worked with ROZZ on Mobile App development projects and the
               experience has been satisfactory both in the customer-supplier
               relationship and in the delivery times and quality of technical
               solutions. I hope to continue collaborating with them on WordPress
               Support in the future.
             </p>
-            <h3>Odón Martí</h3>
+            <h3>Willian Jay</h3>
             <h5>Director at Uber</h5>
           </div>
         </div>

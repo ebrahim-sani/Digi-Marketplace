@@ -15,8 +15,14 @@ import DashboardLeft from "../components/DashboardLeft";
 import { Line } from "react-chartjs-2";
 import TopSelling from "../components/TopSelling";
 import Donut from "../lib/Donut";
+import { useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
+import { useHistory } from "react-router-dom";
 
 function Dashboard() {
+  const user = useSelector(selectUser);
+  const history = useHistory();
+
   const lineChart = (
     <Line
       data={{
@@ -70,7 +76,16 @@ function Dashboard() {
                   color: "#837ee0",
                 }}
               />
-              <a href="/">Products</a>
+              <span
+                style={{
+                  fontWeight: "550",
+                  fontSize: "1rem",
+                  paddingLeft: "10px",
+                }}
+                onClick={() => history.push("/vendor/add-product")}
+              >
+                + New Product
+              </span>
             </div>
             <div className="item">
               <GroupSharpIcon
@@ -101,6 +116,7 @@ function Dashboard() {
                 <AccountCircleSharpIcon
                   style={{ fontSize: 35, color: "#837ee0" }}
                   className="headerIcon"
+                  src={user?.photoURL}
                 />
               </div>
             </div>

@@ -9,6 +9,7 @@
   margin-top: 50px;
   font-style: italic;
   color: #837ee0;
+  cursor: pointer;
 }
 .register__component h1 {
   text-align: center;
@@ -70,7 +71,7 @@ form {
 }
 button {
   margin-top: 5px;
-  padding: 10px 145px;
+  padding: 10px 126px;
   outline: none;
   border: none;
   font-size: 1.2rem;

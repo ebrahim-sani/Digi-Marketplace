@@ -61,7 +61,7 @@ function Sidebar() {
               color: "#837ee0",
             }}
           />
-          <a href="/#">Marketplace</a>
+          <a href="/marketplace">Marketplace</a>
         </div>
       </div>
     </div>

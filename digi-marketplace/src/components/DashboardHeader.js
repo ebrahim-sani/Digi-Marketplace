@@ -5,8 +5,12 @@ import SearchSharpIcon from "@material-ui/icons/SearchSharp";
 import NotificationsActiveSharpIcon from "@material-ui/icons/NotificationsActiveSharp";
 import SettingsSharpIcon from "@material-ui/icons/SettingsSharp";
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
 
 function DashboardHeader() {
+  const user = useSelector(selectUser);
+
   const history = useHistory();
   return (
     <div className="dashboard__header">
@@ -19,6 +23,7 @@ function DashboardHeader() {
           <AccountCircleSharpIcon
             style={{ fontSize: 35, color: "#837ee0" }}
             className="headerIcon"
+            src={user?.photoURL}
           />
         </div>
       </div>

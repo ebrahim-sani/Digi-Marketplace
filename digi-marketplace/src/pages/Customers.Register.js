@@ -3,11 +3,11 @@ import "./Register.css";
 import { useHistory } from "react-router-dom";
 import { auth } from "../firebase";
 
-function Register() {
+function CustomerRegister() {
   const history = useHistory();
 
-  const emailRef = useRef();
-  const passwordWordRef = useRef();
+  const emailRef = useRef(null);
+  const passwordWordRef = useRef(null);
 
   const register = (e) => {
     e.preventDefault();
@@ -17,10 +17,10 @@ function Register() {
         passwordWordRef.current.value
       )
       .then((authUser) => {
-        console.log(authUser);
+        history.push("/customer/login");
       })
       .then((authUser) => {
-        history.push("/vendor/login");
+        console.log(authUser);
       })
       .catch((error) => {
         alert(error.message);
@@ -35,8 +35,9 @@ function Register() {
           <form method="post">
             <div className="login__heading">
               <h3>Register</h3>
-              <p>Vendor</p>
+              <p>Customer</p>
             </div>
+
             <div className="text__field">
               <input ref={emailRef} type="text" placeholder="Email" />
             </div>
@@ -51,7 +52,7 @@ function Register() {
               Signin with google
             </button>
             <div className="sign__up">
-              If you have account? <a href="/vendor/login">Sigin here..</a>
+              If you have account? <a href="/customer/login">Sigin here..</a>
             </div>
           </form>
         </div>
@@ -60,4 +61,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default CustomerRegister;
