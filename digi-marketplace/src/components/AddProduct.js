@@ -1,60 +1,69 @@
 import React from "react";
 import Header from "./Header";
-import db from "../firebase";
-import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
+import ProductList from "./inner-component/ProductList";
+import "./AdProduct.css";
+import Footer from "./Footer";
+import { useDispatch } from "react-redux";
+import Form from "../lib/Form";
 import { Button } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "25ch",
-      position: "relative",
-      left: "350px",
-    },
-  },
-}));
+import { enabled } from "../features/formSlice";
 
 function AddProduct() {
-  const classes = useStyles();
-
-  const handleSUbmit = () => {
-    db.collection("software").add({
-      title: FormData.software_ttle,
-      cover_url: FormData.cover_url,
-    });
-  };
-
+  const dispatch = useDispatch();
   return (
-    <div className="addProduct">
-      <Header />
-
-      <form className={classes.root} noValidate autoComplete="off">
-        <TextField
-          name="software_ttle"
-          id="outlined-basic"
-          label="Title"
-          variant="outlined"
-        />
-        <TextField
-          id="outlined-basic"
-          label="Cover Url (start with https)"
-          variant="outlined"
-          name="cover_url"
-        />
+    <div
+      className="addProduct"
+      style={{
+        background: "#fff",
+        height: "100vh",
+      }}
+    >
+      <div className="form__component">
+        <Header />
+        <Form />
         <Button
-          variant="outlined"
-          color="primary"
           style={{
-            padding: "12px",
-            width: "120px",
+            textTransform: "none",
+            color: "white",
+            position: "fixed",
+            top: "96px",
+            left: "100px",
           }}
-          onClick={handleSUbmit}
+          variant="contained"
+          color="primary"
+          onClick={() => dispatch(enabled())}
         >
-          Add
+          Add Product
         </Button>
-      </form>
+      </div>
+      <div className="productComponent">
+        <ProductList
+          img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
+          title="Security Software with Top Grade Security Standards"
+          desc="lorem topm lfess joplin aee and leeaddf jtuo naalo na vaae joplin aee and leeaddf jtuo naalo na vaae "
+        />
+        <ProductList
+          img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
+          title="Security Software with Top Grade Security Standards"
+          desc="lorem topm lfess joplin aee and leeaddf jtuo naalo na vaae joplin aee and leeaddf jtuo naalo na vaae "
+        />
+        <ProductList
+          img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
+          title="Security Software with Top Grade Security Standards"
+          desc="lorem topm lfess joplin aee and leeaddf jtuo naalo na vaae joplin aee and leeaddf jtuo naalo na vaae "
+        />
+        <ProductList
+          img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
+          title="Security Software with Top Grade Security Standards"
+          desc="lorem topm lfess joplin aee and leeaddf jtuo naalo na vaae joplin aee and leeaddf jtuo naalo na vaae "
+        />
+        <ProductList
+          img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
+          title="Security Software with Top Grade Security Standards"
+          desc="lorem topm lfess joplin aee and leeaddf jtuo naalo na vaae joplin aee and leeaddf jtuo naalo na vaae "
+        />
+      </div>
+      <Footer />
     </div>
   );
 }

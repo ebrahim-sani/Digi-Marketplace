@@ -1,8 +1,10 @@
 import { Button } from "@material-ui/core";
 import React from "react";
 import "./HeroSection.css";
+import { useHistory } from "react-router-dom";
 
 function HeroSection() {
+  const history = useHistory();
   return (
     <div className="hero">
       <div className="hero__component">
@@ -22,6 +24,7 @@ function HeroSection() {
                 height: 56,
                 borderRadius: 10,
               }}
+              onClick={() => history.push("/marketplace")}
             >
               Explore Products
             </Button>
