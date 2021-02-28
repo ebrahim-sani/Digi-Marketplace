@@ -1,56 +1,87 @@
 import React from "react";
 import db from "../firebase";
-import TextField from "@material-ui/core/TextField";
 import { disabled, selectForm } from "../features/formSlice";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useForm } from "react-hook-form";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
       margin: theme.spacing(1),
-      width: "25ch",
+      width: "35ch",
       position: "relative",
-      left: "150px",
-      marginTop: "20px",
-      // display: "none",
+      left: "250px",
+      marginTop: "10px",
+      padding: "18px",
+      outline: "none",
+      borderColor: "#837ee0",
+      borderRadius: "6px",
     },
   },
 }));
 
 function Form() {
-  const dispatch = useDispatch();
+  const { register, handleSubmit, watch, errors } = useForm();
   const enabled = useSelector(selectForm);
   const classes = useStyles();
-  const handleSUbmit = (formData) => {
+
+  const onSubmit = (formData) => {
     db.collection("software").add({
       software_title: formData.software_title,
       cover_url: formData.cover_url,
     });
     console.log(formData);
   };
+
   return (
     <div>
       {enabled && (
         <form
-          onSubmit={handleSUbmit}
+          onSubmit={handleSubmit(onSubmit)}
           className={classes.root}
           noValidate
           autoComplete="off"
         >
-          <TextField
+          <input
             name="software_title"
             id="outlined-basic"
-            label="Title"
-            variant="outlined"
+            placeholder="TItle"
+            ref={register({ required: true })}
           />
-          <TextField
+          {errors.software_title && (
+            <p
+              style={{
+                fontSize: "10px",
+                position: "absolute",
+                top: "100px",
+                left: "275px",
+                color: "red",
+              }}
+            >
+              title is required
+            </p>
+          )}
+          <input
             id="outlined-basic"
-            label="Cover Url (start with https)"
-            variant="outlined"
+            placeholder="Cover Url (start with https)"
             name="cover_url"
+            ref={register({ required: true })}
           />
+          {errors.cover_url && (
+            <p
+              style={{
+                fontSize: "10px",
+                position: "absolute",
+                top: "100px",
+                left: "588px",
+                color: "red",
+              }}
+            >
+              cover url is required
+            </p>
+          )}
           <Button
             variant="outlined"
             color="primary"
@@ -59,7 +90,6 @@ function Form() {
               width: "120px",
             }}
             type="submit"
-            onClick={() => dispatch(disabled())}
           >
             Add
           </Button>

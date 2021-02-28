@@ -25,7 +25,7 @@ function AddProduct() {
           style={{
             textTransform: "none",
             color: "white",
-            position: "fixed",
+            position: "absolute",
             top: "96px",
             left: "100px",
           }}
