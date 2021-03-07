@@ -19,3 +19,32 @@
   font-weight: 300;
   line-height: 25px;
 }
+
+/* =========== Media Queries ============ */
+@media (max-width: 680px) {
+  .desc__component {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  .right_component {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px), (max-width: 960px) {
+  .desc__component {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  .right_component {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5px;
+  }
+  .left_component p {
+    font-size: 1.1rem;
+  }
+}

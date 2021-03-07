@@ -4,6 +4,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import { IconButton } from "@material-ui/core";
 
 function Footer() {
   return (
@@ -48,30 +49,38 @@ function Footer() {
         </div>
       </div>
       <div className="social__icons">
-        <LinkedInIcon
-          style={{
-            fontSize: 30,
-          }}
-          className="icon"
-        />
-        <FacebookIcon
-          style={{
-            fontSize: 30,
-          }}
-          className="icon"
-        />
-        <YouTubeIcon
-          style={{
-            fontSize: 30,
-          }}
-          className="icon"
-        />
-        <TwitterIcon
-          style={{
-            fontSize: 30,
-          }}
-          className="icon"
-        />
+        <IconButton>
+          <LinkedInIcon
+            style={{
+              fontSize: 30,
+            }}
+            className="icon"
+          />
+        </IconButton>
+        <IconButton>
+          <FacebookIcon
+            style={{
+              fontSize: 30,
+            }}
+            className="icon"
+          />
+        </IconButton>
+        <IconButton>
+          <YouTubeIcon
+            style={{
+              fontSize: 30,
+            }}
+            className="icon"
+          />
+        </IconButton>
+        <IconButton>
+          <TwitterIcon
+            style={{
+              fontSize: 30,
+            }}
+            className="icon"
+          />
+        </IconButton>
       </div>
       <div className="copyright__section">
         <h5>ROZZ &copy; 2021</h5>

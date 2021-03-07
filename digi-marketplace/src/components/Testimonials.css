@@ -32,3 +32,39 @@
   padding: 30px;
   font-size: 1.6rem;
 }
+
+/* ========= Media Queries ======== */
+@media (max-width: 680px) {
+  .testimonails__content {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 100px;
+  }
+  .testimony {
+    width: 490px;
+  }
+  .testimony p {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonails__content {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .testimony {
+    width: 530px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .testimonails__content {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}

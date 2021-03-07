@@ -84,7 +84,7 @@ function Dashboard() {
                 }}
                 onClick={() => history.push("/vendor/add-product")}
               >
-                + New Product
+                My Product
               </span>
             </div>
             <div className="item">
@@ -101,7 +101,7 @@ function Dashboard() {
                   color: "#837ee0",
                 }}
               />
-              <a href="/">Marketplace</a>
+              <a href="/marketplace">Marketplace</a>
             </div>
           </div>
         </div>

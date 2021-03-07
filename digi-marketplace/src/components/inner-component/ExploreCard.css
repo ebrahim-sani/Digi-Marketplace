@@ -20,3 +20,20 @@
   font-weight: 300;
   margin: 0 20px;
 }
+
+/* ======= Media Queries ======== */
+@media (max-width: 640px) {
+  .explore_component {
+    width: 13rem;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .explore_component {
+    width: 17rem;
+    padding: 20px 0;
+  }
+  .explore_component p {
+    font-size: 1rem;
+  }
+}

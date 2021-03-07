@@ -1,5 +1,5 @@
 .productComponent {
-  margin: 14px 45px;
+  margin: 20px 45px;
   padding-left: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import { auth, provider } from "../firebase";
 import { login } from "../features/userSlice";
 import { useDispatch } from "react-redux";
+import { Button } from "@material-ui/core";
 
 function CustomersLogin() {
   const history = useHistory();
@@ -66,13 +67,14 @@ function CustomersLogin() {
             <div className="forgot__passLink">Forgot Password?</div>
             <button onClick={signIn}>Login</button>
             <div className="sep__line"> ---------- Or ---------- </div>
-            <button
+            <Button
+              variant="outlined"
               onClick={signInWithGoogle}
               class="favorite styled"
               type="button"
             >
               Signin with google
-            </button>
+            </Button>
             <div className="sign__up">
               Don't have account? <a href="/customer/register">Signup here..</a>
             </div>

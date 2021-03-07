@@ -24,3 +24,37 @@
 .little_desc {
   padding-left: 30px;
 }
+
+/* ========== Media Queries =========== */
+@media (max-width: 680px) {
+  .content_component {
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+    right: 15px;
+  }
+  .little_desc {
+    padding-left: 20px;
+  }
+  .little_desc p {
+    font-size: 1rem;
+    margin: 16px 0;
+    line-height: 25px;
+    padding: 0 10px 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content_component {
+    display: flex;
+    padding: 8px 0;
+    position: relative;
+    right: 15px;
+  }
+  .little_desc {
+    padding-left: 12px;
+  }
+  .little_desc p {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+}

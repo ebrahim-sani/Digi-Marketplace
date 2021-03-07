@@ -1,5 +1,6 @@
 .explore {
   margin: 40px 0;
+  background: whitesmoke;
 }
 .explore__components {
   display: flex;
@@ -9,4 +10,46 @@
 .explore__heading {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+}
+
+/* =========== Media Queries ============ */
+
+@media (max-width: 680px) {
+  .explore__components {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0px;
+    margin: 0 50px;
+    justify-content: space-between;
+    position: relative;
+    left: 10px;
+  }
+  .explore {
+    margin: 20px 0;
+    background: whitesmoke;
+  }
+}
+@media screen and (max-width: 768px) {
+  .explore__components {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 50px;
+    justify-content: space-between;
+  }
+  .explore {
+    margin: 20px 0;
+    background: whitesmoke;
+  }
+}
+@media screen and (max-width: 960px) {
+  .explore__components {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 50px;
+  }
+  .explore {
+    margin: 20px 0;
+    background: whitesmoke;
+  }
 }

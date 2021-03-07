@@ -1,15 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./MarketPlace.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Software from "../components/Software";
+import { db } from "../firebase";
 
 function MarketPlace() {
+  const [software, setSoftware] = useState([]);
+
+  useEffect(() => {
+    db.collection("software").onSnapshot((snapshot) =>
+      setSoftware(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      )
+    );
+  }, []);
+  console.log(software);
+
   return (
     <div className="marketplace">
       <Header />
       <div className="marketplace__component">
         <div className="software__list">
+          {software.map(({ id, data: { cover_url, software_title } }) => (
+            <Software
+              id={id}
+              key={id}
+              cover_img={cover_url}
+              sw_name={software_title}
+            />
+          ))}
           <Software
             cover_img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
             sw_name="Security Software with Top-Grade Security Standards..."
@@ -20,7 +43,7 @@ function MarketPlace() {
             sw_name="Acronis True Image 2021 - 1 Computer| 12-Month Subscription, 1 Person | Premium Office Apps | 1TB OneDrive Cloud Storage | PC/Mac Download"
             desc=""
           />
-          <Software
+          {/* <Software
             cover_img="https://images-na.ssl-images-amazon.com/images/I/61pw7xaZkrL._AC_SL1500_.jpg"
             sw_name="OfficeSuite Home & Business 2021 | Lifetime License | Compatible with Word®, Excel®, PowerPoint® & PDF for Windows"
             desc=""
@@ -79,7 +102,7 @@ function MarketPlace() {
             cover_img="https://images-na.ssl-images-amazon.com/images/I/81Meqy%2B0O6L._AC_SL1500_.jpg"
             sw_name="NordVPN 18-Month VPN Subscription - Internet Privacy & Security Software with Top-Grade Security Standards, Double Encryption, Secure Content Access"
             desc=""
-          />
+          /> */}
         </div>
         <div className="margin__line"></div>
         <Footer />

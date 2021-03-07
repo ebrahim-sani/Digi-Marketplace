@@ -23,7 +23,6 @@ function AddProduct() {
       )
     );
   }, []);
-  console.log(software);
 
   return (
     <div
@@ -41,10 +40,10 @@ function AddProduct() {
             textTransform: "none",
             color: "white",
             position: "absolute",
-            top: "96px",
+            top: "90px",
             left: "100px",
           }}
-          variant="contained"
+          variant="outlined"
           color="primary"
           onClick={() => dispatch(enabled())}
         >

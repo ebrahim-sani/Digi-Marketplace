@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       position: "relative",
       left: "250px",
       marginTop: "10px",
-      padding: "18px",
+      padding: "19px",
       outline: "none",
       borderColor: "#837ee0",
       borderRadius: "6px",
@@ -36,7 +36,13 @@ function Form() {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+      }}
+    >
       {enabled && (
         <form
           onSubmit={handleSubmit(onSubmit)}
